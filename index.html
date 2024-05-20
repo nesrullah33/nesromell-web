@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesromell Tişört Mağazası</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Nesromell Tişört Mağazası</h1>
+        <nav>
+            <button onclick="goTo('index.html')">Anasayfa</button>
+            <button onclick="goTo('iletisim.html')">İletişim</button>
+            <button onclick="openWhatsApp()">WhatsApp Destek</button>
+            <button type="button" class="buy" onclick="completeOrder()">Satın Al</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="product">
+            <h2>Nesromell</h2>
+            <img src="img/f1.jpeg" alt="Ürün Resmi 1" onclick="openImage(this.src)" width="450" height="350">
+            <p class="description">Ürünümüzde üç al iki öde kampanyamız vardır.</p>
+            <p class="price">Ürün Fiyatı: $19.99</p>
+            <p class="size">Tişört Bedeni:
+                <select name="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+            </p>
+            <button onclick="addToCart('f1')">Sepete Ekle</button>
+        </section>
+
+        <section class="product">
+            <h2>Nesromell</h2>
+            <img src="img/f4.jpg.jpeg" alt="Ürün Resmi 2" onclick="openImage(this.src)" width="450" height="350">
+            <p class="description">Değişim mevcuttur sınırlı stok.</p>
+            <p class="price">Ürün Fiyatı: $24.99</p>
+            <p class="size">Tişört Bedeni:
+                <select name="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+            </p>
+            <button onclick="addToCart('f2')">Sepete Ekle</button>
+        </section>
+
+        <section class="product">
+            <h2>Nesromell</h2>
+            <img src="img/f5.jpg.jpeg" alt="Ürün Resmi 3" onclick="openImage(this.src)" width="450" height="350">
+            <p class="description">Değişim mevcuttur sınırlı stok.</p>
+            <p class="price">Ürün Fiyatı: $24.99</p>
+            <p class="size">Tişört Bedeni:
+                <select name="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+            </p>
+            <button onclick="addToCart('f5')">Sepete Ekle</button>
+        </section>
+
+        <section class="product">
+            <h2>Nesromell</h2>
+            <img src="img/f6.jpg.jpeg" alt="Ürün Resmi 4" onclick="openImage(this.src)" width="450" height="350">
+            <p class="description">Değişim mevcuttur sınırlı stok.</p>
+            <p class="price">Ürün Fiyatı: $24.99</p>
+            <p class="size">Tişört Bedeni:
+                <select name="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+            </p>
+            <button onclick="addToCart('f6')">Sepete Ekle</button>
+        </section>
+
+        <section class="product">
+            <h2>Nesromell</h2>
+            <img src="img/f7.jpg.jpeg" alt="Ürün Resmi 5" onclick="openImage(this.src)" width="450" height="350">
+            <p class="description">Değişim mevcuttur sınırlı stok.</p>
+            <p class="price">Ürün Fiyatı: $24.99</p>
+            <p class="size">Tişört Bedeni:
+                <select name="size">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+            </p>
+            <button onclick="addToCart('f7')">Sepete Ekle</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nesromell Tişört Mağazası</p>
+    </footer>
+
+    <aside class="social-media">
+        <h2>Sosyal Medya</h2>
+        <ul>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a></li>
+        </ul>
+    </aside>
+
+    <script>
+        function openImage(src) {
+            window.open(src);
+        }
+
+        function addToCart(productID) {
+            // Sepete ekleme işlemleri burada gerçekleştirilebilir
+            alert("Ürün sepete eklendi: " + productID);
+        }
+
+        function goTo(page) {
+            window.location.href = page;
+        }
+
+        function openWhatsApp() {
+            window.open('https://wa.me/05523019582', '_blank');
+        }
+
+        function completeOrder() {
+            alert("Siparişiniz başarıyla tamamlandı. Teşekkür ederiz!");
+        }
+    </script>
+</body>
+</html>
+
+
+
